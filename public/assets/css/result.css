@@ -1,0 +1,310 @@
+/* Style global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Merriweather Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    height: 100vh;
+    background-image: url("/assets/images/fondresult.avif");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* header{
+    border: none;
+} */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(2, 100, 219);
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    align-items: center;
+}
+nav h1{
+    width: 10%;
+}
+main{
+
+    margin: 0;
+}
+/* Première section avec l'image et le H1 */
+.budget-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    margin: 20px;
+    position: relative;
+    border: 1px solid;
+}
+
+.budget-header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 36px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.budget-header img {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.budget-header .site-image {
+    width: 30%;
+    height: 100%;
+    background-image: url("/assets/images/fondblock.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+/* Section des critères sélectionnés */
+.selection-criteria {
+    display: flex;
+    justify-content: space-around;
+    background-image: url("/assets/images/fondblock.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+.selection-criteria p {
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 8px;
+    color: rgb(2, 100, 219);
+    width: 20%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Détails du budget */
+
+.details-titre{
+    text-align: center;
+    padding: 20px;
+
+}
+.budget-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.budget-details p {
+    width: 50%;
+    padding: 15px;
+    margin: 10px;
+    color: rgb(134, 134, 134);
+    font-weight: 800;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.budget-details p:hover {
+    transform: translateY(-5px);
+    color: white;
+}
+
+/* Couleurs pour chaque critère */
+.transport:hover {
+    background-color: #4caf4f2e; 
+}
+
+.hebergement:hover {
+    background-color: #2196F32e; 
+}
+
+.restauration:hover {
+    background-color: #FFEB3B2e; 
+    color: black;
+}
+
+.loisirs:hover {
+    background-color: #FF98002e; 
+}
+
+.miscellaneous:hover {
+    background-color: #9C27B02e; 
+}
+
+.Abonnement:hover {
+    background-color: #E91E632e; 
+}
+
+.budget-details p{
+    background-color: rgba(0, 0, 0, 0.154);
+}
+/* Budget total */
+.total-budget {
+    text-align: center;
+    font-size: 24px;
+    margin: 30px;
+    font-weight: bold;
+    background-color: rgb(2, 100, 219);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Bouton enregistrer en PDF */
+.submit-btn {
+    display: block;
+    margin: 30px auto;
+    background-color: #FF5722;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.submit-btn:hover {
+    background-color: #E64A19;
+    transform: scale(1.05);
+}
+
+
+.site-footer {
+    background-color: rgb(255, 255, 255);
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: rgb(2, 100, 219);
+}
+
+.site-footer .container-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.site-footer .footer-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+.about-section, .newsletter-section, .social-section {
+    width: 30%;
+    background-color: rgba(240, 240, 240, 0.9);
+    padding: 10px 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.site-footer h3 {
+    color: rgb(2, 100, 219);
+    font-family: "Bebas Neue", sans-serif;
+    margin-bottom: 15px;
+}
+
+.site-footer input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 70%;
+}
+
+.site-footer button {
+    background-color: rgb(2, 100, 219);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.site-footer button:hover {
+    background-color: #004d99;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icons li {
+    display: inline-block;
+}
+
+.social-icons a {
+    background-color: rgb(2, 100, 219);
+    color: white;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    border-radius: 100%;
+    transition: all .2s linear;
+}
+
+.social-icons a:hover {
+    background-color: #004d99;
+}
+
+.copyright-text {
+    margin-top: 20px;
+    color: rgb(2, 100, 219);
+    font-size: 14px;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .footer-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-section, .newsletter-section, .social-section {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
