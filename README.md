@@ -12,9 +12,8 @@ Technologies utilisées
 
  Installation et Utilisation
 à faire dans votre terminal :
-git clone https://github.com/kwamsd/Projet_PHP.git
-cd Projet_PHP
-composer install
-php -S localhost:8000 -t public
-puis accéder au site grâce au lien suivant :
-http://localhost:8000
+1. git clone https://github.com/kwamsd/Projet_PHP.git
+2. cd Projet_PHP
+3. composer install
+4. php -S localhost:8000 -t public
+5. puis accéder au site grâce au lien suivant : http://localhost:8000
