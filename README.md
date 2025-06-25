@@ -12,8 +12,17 @@ Travel Simulator est un site web permettant de simuler un budget de voyage en fo
 
 ## Installation et Utilisation
 ### À faire dans votre terminal :
-1. git clone https://github.com/kwamsd/Projet_PHP.git
-2. cd Projet_PHP
-3. composer install
-4. php -S localhost:8000 -t public
+```bash
+#1.
+git clone https://github.com/kwamsd/Projet_PHP.git
+
+#2
+cd Projet_PHP
+
+#3
+composer install
+
+#4
+php -S localhost:8000 -t public
+```
 5. puis accéder au site grâce au lien suivant : http://localhost:8000
